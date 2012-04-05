@@ -60,7 +60,7 @@
 					// uncheck previous and remove checked class
 					if (!force || !this.checked) {
 						// filter by name and remove class from the last radio checked
-						rds.filter('[name=' + this.name + ']').next().removeClass(rds.type + checkedPrefix);
+						rds.filter('[name="' + this.name + '"]').next().removeClass(rds.type + checkedPrefix);
 						// add checked class to this input
 						$(this).next().addClass(rds.type + checkedPrefix);
 					}
